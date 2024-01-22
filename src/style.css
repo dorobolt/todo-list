@@ -1,0 +1,52 @@
+html,
+body {
+    height: 100%;
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+:root {
+    font-size: 12px;
+    --header-color: rgb(49, 0, 128);
+    --nav-color: rgb(141, 130, 202);
+    --background-color: rgb(218, 220, 247);
+}
+
+header {
+    width: 100%;
+    background-color: var(--header-color);
+    font-size: 3rem;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#nav-bar {
+    flex: 1 1 auto;
+    background-color: var(--nav-color);
+    width: 15%;
+    height: 100%;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    padding-top: 25px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    .nav {
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        align-items: center;
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+    }
+}
